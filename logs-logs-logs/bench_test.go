@@ -33,7 +33,7 @@ func replaceFast(log string, oldRune, newRune rune) string {
 }
 
 // Подготовим длинную строку для честного сравнения
-var longLog = strings.Repeat("exercism❗", 100000)
+var longLog = strings.Repeat("exercism❗", 50000)
 
 func BenchmarkReplaceSlow(b *testing.B) {
 	for i := 0; i < b.N; i++ {
